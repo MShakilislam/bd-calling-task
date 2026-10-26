@@ -108,12 +108,12 @@ ul {
 .right-logo {
     width: 45px;
     height: 45px;
-    border-radius: 50%;
 }
 
 .right-logo img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
 }
 
 /* banner section  */
@@ -167,20 +167,24 @@ ul {
     height: 100%;
     text-align: left;
 }
-.choice-text h1{
+
+.choice-text h1 {
     font-size: 34px;
     color: rgb(71, 43, 43);
     font-weight: 800;
 }
-.choice-text h1 span{
+
+.choice-text h1 span {
     color: rgb(153, 7, 7);
 }
-.choice-text p{
+
+.choice-text p {
     font-size: 18px;
     color: rgb(58, 56, 56);
     margin: 20px 0;
 }
-.btn-1{
+
+.btn-1 {
     border: 1px solid black;
     padding: 10px 30px;
     color: wheat;
@@ -191,15 +195,79 @@ ul {
     border-radius: 7px;
 }
 
+/* grid section  */
+.grid-section{
+    padding: 35px 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.row>div {
+    flex: 1;
+}
+
+.row {
+    height: 300px;
+    display: flex;
+    gap: 5px;
+    margin: 5px;
+}
+
+.double img {
+    height: calc((100% - 5px)/2);
+}
+
+.tigher {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+/* responsive area  */
 
 
 
 
 
 
-@media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
     .header {
         min-height: 450px;
+    }
+
+    .choice-parent {
+        grid-template-columns: 1fr;
+    }
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .double img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:557px) {
+    .tigher {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -207,5 +275,13 @@ ul {
 @media (max-width: 480px) {
     .header {
         min-height: 350px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:992px) {
+    .row {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
     }
 }
