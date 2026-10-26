@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.container {
+    max-width: 1270px;
+    margin: auto;
+    padding: 30px 10px;
+}
+ul{
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 600px;
+    background-image: url("banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* nav bar style  */
+.strat-header {
+    background-color: rgba(7, 1, 1, 0.3);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, .9);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h3 {
+    font-size: 35px;
+    color: rgb(241 207 5);
+    font-weight: bold;
+}
+
+.left-menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 10px; */
+}
+
+.left-menu ul li {
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 10px 12px;
+    background: gold;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.left-menu ul li:hover {
+    animation: shake 0.4s ease-in-out;
+    background: black;
+    color: wheat;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-4px);
+    }
+
+    50% {
+        transform: translateX(4px);
+    }
+
+    75% {
+        transform: translateX(-4px);
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.right-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* banner section  */
+.banner-text{
+    padding: 20px 10px;
+}
+.banner-text h2{
+    font: bolder;
+    font-size: 40px;
+    color: #6a0303;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.buttoo ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.buttoo ul li{
+    font-weight: bold;
+    color: wheat;
+    font-size: 22px;
+    margin-right: 10px;
+    background: darkorange;
+    padding: 10px 17px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .header {
+        min-height: 450px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .header {
+        min-height: 350px;
+    }
+}
