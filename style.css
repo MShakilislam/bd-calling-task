@@ -12,12 +12,17 @@ body {
         "wdth" 100;
 }
 
+main {
+    background: linear-gradient(to bottom, #f6f7d6, #9ba581, #636b4e);
+}
+
 .container {
     max-width: 1270px;
     margin: auto;
     padding: 30px 10px;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
@@ -112,22 +117,25 @@ ul{
 }
 
 /* banner section  */
-.banner-text{
+.banner-text {
     padding: 20px 10px;
 }
-.banner-text h2{
+
+.banner-text h2 {
     font: bolder;
     font-size: 40px;
     color: #6a0303;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.buttoo ul{
+
+.buttoo ul {
     display: flex;
     justify-content: start;
     align-items: center;
 }
-.buttoo ul li{
+
+.buttoo ul li {
     font-weight: bold;
     color: wheat;
     font-size: 22px;
@@ -138,14 +146,50 @@ ul{
     cursor: pointer;
 }
 
+/* choice section  */
+.choice-parent {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
 
+.choice-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
 
-
-
-
-
-
-
+.choice-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+}
+.choice-text h1{
+    font-size: 34px;
+    color: rgb(71, 43, 43);
+    font-weight: 800;
+}
+.choice-text h1 span{
+    color: rgb(153, 7, 7);
+}
+.choice-text p{
+    font-size: 18px;
+    color: rgb(58, 56, 56);
+    margin: 20px 0;
+}
+.btn-1{
+    border: 1px solid black;
+    padding: 10px 30px;
+    color: wheat;
+    align-self: flex-start;
+    background: black;
+    font-weight: bold;
+    display: block;
+    border-radius: 7px;
+}
 
 
 
