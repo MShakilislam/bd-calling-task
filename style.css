@@ -265,17 +265,20 @@ img {
     color: rgb(139, 6, 6);
     padding-bottom: 10px;
 }
-.single-card h2{
+
+.single-card h2 {
     color: black;
     font-weight: 600;
     padding-bottom: 10px;
 }
-.single-card p{
+
+.single-card p {
     font-size: 16px;
     color: gray;
     padding-bottom: 10px;
 }
-.card-btn{
+
+.card-btn {
     border: none !important;
     padding: 10px 20px;
     color: black;
@@ -288,18 +291,68 @@ img {
 
 }
 
+/* subscribe area section  */
+.subscribe-header h2{
+    font-size: 28px;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+.subscribe-header p{
+    font-size: 16px;
+    color: rgb(19, 17, 17);
+    padding-bottom: 15px;
+}
+.email-section-area {
+    margin: auto;
+}
+
+.email-section {
+    max-width: 530px;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.email-form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.email-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    font-size: 15px;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.email-form input::placeholder {
+    color: #bdbdbd;
+}
+
+.email-form button {
+    width: 110px;
+    padding: 15px;
+    background: #ffeb3b;
+    color: black;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.email-form button:hover {
+    background: #ffd700;
+}
 
 
 
 
-
-
-
-
-
-
-
-
+/* responsive sectin  */
 
 
 @media (max-width: 767px) {
@@ -341,6 +394,23 @@ img {
 @media (max-width: 480px) {
     .header {
         min-height: 350px;
+    }
+
+    .email-section {
+        padding: 15px;
+    }
+
+    .email-form {
+        gap: 8px;
+    }
+
+    .email-form input {
+        padding: 12px;
+    }
+
+    .email-form button {
+        width: 85px;
+        padding: 12px;
     }
 }
 
